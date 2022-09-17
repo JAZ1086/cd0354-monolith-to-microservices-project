@@ -20,8 +20,8 @@ script:
   # - docker build -t udagram-api-feed ./udagram-api-feed
   # - docker build -t udagram-frontend ./udagram-api-feed
   # - docker image prune --all
-  - docker-compose -f docker-compose-build.yaml build --parallel
-  - docker images
+  # - docker-compose -f docker-compose-build.yaml build --parallel
+  # - docker images
   - docker tag reverseproxy azumahjohsua/reverseproxy
   - docker tag udagram-api-user azumahjohsua/udagram-api-user
   - docker tag udagram-api-feed azumahjohsua/udagram-api-feed
