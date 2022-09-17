@@ -22,10 +22,10 @@ script:
   # - docker image prune --all
   - docker-compose -f docker-compose-build.yaml build --parallel
   - docker images
-  - docker tag reverseproxy reverseproxy:v1
-  - docker tag udagram-api-user udagram-api-user:v1
-  - docker tag udagram-api-feed udagram-api-feed:v1
-  - docker tag udagram-frontend:local udagram-frontend:v1
+  - docker tag reverseproxy azumahjohsua/reverseproxy:v1
+  - docker tag udagram-api-user azumahjohsua/udagram-api-user:v1
+  - docker tag udagram-api-feed azumahjohsua/udagram-api-feed:v1
+  - docker tag udagram-frontend:local azumahjohsua/udagram-frontend:v1
   # - docker-compose -f docker-compose-build-yaml build -parallel
 
 after_success:
