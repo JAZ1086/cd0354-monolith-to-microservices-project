@@ -34,4 +34,4 @@ after_success:
   - docker push azumahjoshua/reverseproxy
   - docker push azumahjoshua/udagram-api-user
   - docker push azumahjoshua/udagram-api-feed
-  - docker push azumahjoshuaudagram-frontend
+  - docker push azumahjoshua/udagram-frontend
