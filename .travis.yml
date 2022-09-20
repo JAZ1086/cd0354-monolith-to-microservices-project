@@ -25,7 +25,7 @@ script:
   - docker tag udagram-api-feed azumahjoshua/udagram-api-feed:v3
 
   - docker build -t udagram-frontend ./udagram-frontend
-  - docker tag udagram-frontend:local azumahjoshua/udagram-frontend:v3
+  - docker tag udagram-frontend azumahjoshua/udagram-frontend:v3
 
   # - docker image prune --all
   # - docker-compose -f docker-compose-build.yaml build --parallel
