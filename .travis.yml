@@ -25,7 +25,7 @@ script:
   - docker build -t udagram-frontend ./udagram-frontend
   - docker tag udagram-frontend azumahjoshua/udagram-frontend:v3
 
-  - docker build -t reverseproxy  ./reverseproxy
+  - docker build -t reverseproxy  ./udagram-reverseproxy
   - docker tag reverseproxy azumahjoshua/reverseproxy:v3
 
   # - docker image prune --all
