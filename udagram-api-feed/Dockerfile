@@ -1,4 +1,4 @@
-FROM node:13
+FROM node:12
 # Créer le répertoire de l'application
 WORKDIR /usr/src/app
 # Installer les dépendances de l'application
