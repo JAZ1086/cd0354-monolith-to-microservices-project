@@ -16,5 +16,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: echo "Hello world"
-    - run: ls -l
+    - run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u "${{secrets.DOCKER_USERNAME}}" --password-stdin
+    - run: docker image prune --all
+    - run: docker-compose -f docker-compose-build.yaml build --parallel
+    - run: docker tag udagram-api-feed azumahjoshua/udagram-api-feed:v1
+    - run: docker tag udagram-api-user azumahjoshua/udagram-api-user:v1
+    - run: docker tag udagram-frontend:local azumahjoshua/udagram-frontend :v1
+    - run: docker tag reverseproxy azumahjoshua/reverseproxy:v1
+    - run: docker push azumahjoshua/udagram-frontend:v1
+    - run: docker push azumahjoshua/udagram-api-user:v1
+    - run: docker push azumahjoshua/udagram-api-feed:v1
+    - run: docker push azumahjoshua/reverseproxy:v1
+
