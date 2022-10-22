@@ -16,7 +16,7 @@ spec:
         - name: backend-user
           image: docker.io/azumahjoshua/udagram-api-user:v3
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           resources:
             limits:
               cpu: 500m

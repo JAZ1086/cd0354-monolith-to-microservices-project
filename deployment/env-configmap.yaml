@@ -5,5 +5,5 @@ metadata:
 data:
   AWS_REGION: us-east-1
   AWS_PROFILE: default
-  AWS_BUCKET: azumahjoshuas3dev
+  AWS_BUCKET: udagramproject3azumah
   URL: http://localhost:8100

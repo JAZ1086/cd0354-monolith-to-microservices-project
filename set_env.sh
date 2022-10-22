@@ -1,8 +1,8 @@
-export POSTGRES_USERNAME=joeproject3
-export POSTGRES_PASSWORD=joeproject3
-export POSTGRES_HOST=joeproject3.cmdtejlnpbws.us-east-1.rds.amazonaws.com
-export POSTGRES_DB=postgres
-export AWS_BUCKET=azumahjoshuas3dev
+export POSTGRES_USERNAME=postgres
+export POSTGRES_PASSWORD=adminazumh94
+export POSTGRES_HOST=adminazumh94.c1r4tdnuffpi.us-east-1.rds.amazonaws.com
+export POSTGRES_DB=adminazumh94
+export AWS_BUCKET=udagramproject3azumah
 export AWS_REGION=us-east-1
 export AWS_PROFILE=default
 export JWT_SECRET=hello

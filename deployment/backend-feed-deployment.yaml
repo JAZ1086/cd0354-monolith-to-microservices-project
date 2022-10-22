@@ -16,7 +16,7 @@ spec:
         - name: backend-feed
           image: docker.io/azumahjoshua/udagram-api-feed:v4
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           resources:
             limits:
               cpu: 500m
