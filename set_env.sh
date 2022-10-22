@@ -1,9 +1,0 @@
-export POSTGRES_USERNAME=postgres
-export POSTGRES_PASSWORD=adminazumh94
-export POSTGRES_HOST=adminazumh94.c1r4tdnuffpi.us-east-1.rds.amazonaws.com
-export POSTGRES_DB=adminazumh94
-export AWS_BUCKET=udagramproject3azumah
-export AWS_REGION=us-east-1
-export AWS_PROFILE=default
-export JWT_SECRET=hello
-export URL=http://localhost:8100
