@@ -15,12 +15,12 @@ spec:
         app: backend-feed
     spec:
       containers:
-        - name: backend-feed
-          image: azumahjoshua/udagram-api-feed:v1
-          ports:
-            - containerPort: 8080
-          envFrom:
-            - configMapRef:
-               name: azumahjoshuaproject3config
-            - secretRef:
-               name: azumahjoshuasecret
+      - name: backend-feed	
+        image: azumahjoshua/udagram-api-feed:v2
+        ports:
+        - containerPort: 8080
+        envFrom:
+          - configMapRef:
+              name: env-config
+          - secretRef:
+              name: env-secret

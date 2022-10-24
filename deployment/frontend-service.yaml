@@ -4,8 +4,8 @@ metadata:
   name: frontend
 spec:
   selector:
-    app.kubernetes.io/name: frontend
+     app: frontend
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 8100
+      targetPort: 80

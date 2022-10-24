@@ -15,12 +15,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - name: reverseproxy
-        image: azumahjoshua/reverseproxy:v1
+      - name: reverseproxy	
+        image: azumahjoshua/reverseproxy:v2
         ports:
         - containerPort: 8080
-        envFrom:
-         - configMapRef:
-            name: azumahjoshuaproject3config
-         - secretRef:
-            name: azumahjoshuasecret

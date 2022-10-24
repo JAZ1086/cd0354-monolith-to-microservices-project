@@ -1,9 +1,13 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: azumahjoshuaproject3config
+  name: env-config
 data:
-  AWS_REGION: us-east-1
-  AWS_PROFILE: default
   AWS_BUCKET: udagramproject3azumah
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  POSTGRES_DB: adminazumh94
+  POSTGRES_HOST: adminazumh94.c1r4tdnuffpi.us-east-1.rds.amazonaws.com
+  JWT_SECRET: hello
   URL: http://localhost:8100
+
