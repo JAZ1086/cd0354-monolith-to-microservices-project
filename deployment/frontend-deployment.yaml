@@ -2,23 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
+  labels:
+    app: frontend
 spec:
+  replicas: 3
   selector:
     matchLabels:
-      run: frontend
-  replicas: 2
+      app: frontend
   template:
     metadata:
       labels:
-        run: frontend
+        app: frontend
     spec:
       containers:
-        - name: frontend
-          image: docker.io/azumahjoshua/udagram-frontend:v4
-          ports:
-            - containerPort: 80
-          resources:
-            limits:
-              cpu: 500m
-            requests:
-              cpu: 200m
+      - name: frontend
+        image: azumahjoshua/udagram-frontend:v1
+        ports:
+        - containerPort: 80

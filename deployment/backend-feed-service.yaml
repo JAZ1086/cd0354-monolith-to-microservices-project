@@ -11,3 +11,15 @@ spec:
       targetPort: 8080
   selector:
     run: backend-feed
+
+# apiVersion: v1
+# kind: Service
+# metadata:
+  # name: my-service
+# spec:
+  # selector:
+    # app.kubernetes.io/name: MyApp
+  # ports:
+    # - protocol: TCP
+      # port: 80
+      # targetPort: 9376

@@ -2,23 +2,25 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: reverseproxy
+  labels:
+    app: reverseproxy
 spec:
+  replicas: 2
   selector:
     matchLabels:
-      run: reverseproxy
-  replicas: 2
+      app: reverseproxy
   template:
     metadata:
       labels:
-        run: reverseproxy
+        app: reverseproxy
     spec:
       containers:
-        - name: reverseproxy
-          image: docker.io/azumahjoshua/reverseproxy:v4
-          ports:
-            - containerPort: 80
-          resources:
-            limits:
-              cpu: 1000m
-            requests:
-              cpu: 500m
+      - name: reverseproxy
+        image: azumahjoshua/reverseproxy:v1
+        ports:
+        - containerPort: 8080
+        envFrom:
+         - configMapRef:
+            name: azumahjoshuaproject3config
+         - secretRef:
+            name: azumahjoshuasecret
